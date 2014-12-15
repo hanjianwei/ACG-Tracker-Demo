@@ -1,0 +1,778 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2620EF2719B0AACF00EF0155 /* Point3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2620EF2519B0AACF00EF0155 /* Point3d.cpp */; };
+		2624AF4719B36431004F586A /* PNP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2624AF4519B36431004F586A /* PNP.cpp */; };
+		264D0061198689B900406084 /* SfM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 264D005F198689B900406084 /* SfM.cpp */; };
+		266680B719A778CE005F2160 /* EssentialMatrix3PtSolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 266680B519A778CE005F2160 /* EssentialMatrix3PtSolver.cpp */; };
+		266775C9196D9CC40083087C /* PolynomialSolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 266775C8196D9CC40083087C /* PolynomialSolver.cpp */; };
+		2668541319E58E8A003D836B /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2668541219E58E8A003D836B /* GLKit.framework */; };
+		2668541419E59B42003D836B /* libCeresIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C5D4D419CE239100746C1B /* libCeresIOS.a */; };
+		267DF2E419B32A8D00F75768 /* PatchDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 267DF2E219B32A8D00F75768 /* PatchDescription.cpp */; };
+		2688655219A663BB00C0CBED /* NormalizationTransform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2688655019A663BB00C0CBED /* NormalizationTransform.cpp */; };
+		26AA425A19752C04004863A7 /* GrayscaleImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26AA425919752C04004863A7 /* GrayscaleImage.cpp */; };
+		26AA425C197544B0004863A7 /* RGBImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26AA425B197544B0004863A7 /* RGBImage.cpp */; };
+		26AA425F19754777004863A7 /* RGBAImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26AA425D19754777004863A7 /* RGBAImage.cpp */; };
+		26AA4262197548B2004863A7 /* BGRAImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26AA4260197548B2004863A7 /* BGRAImage.cpp */; };
+		26AA426A1977DD2A004863A7 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26AA42661977DD2A004863A7 /* Camera.cpp */; };
+		26AA426B1977DD2A004863A7 /* SE3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26AA42681977DD2A004863A7 /* SE3.cpp */; };
+		26AA426E1977DE2C004863A7 /* Intrinsics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26AA426C1977DE2C004863A7 /* Intrinsics.cpp */; };
+		26AA42711979563E004863A7 /* Feature.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26AA426F1979563E004863A7 /* Feature.cpp */; };
+		26AA427419797285004863A7 /* OASTDetection9_16.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26AA427219797285004863A7 /* OASTDetection9_16.cpp */; };
+		26AA4278197D0EC4004863A7 /* AGASTDetection5_8.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26AA4276197D0EC4004863A7 /* AGASTDetection5_8.cpp */; };
+		26AA427C197D20D8004863A7 /* BRISKLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26AA427A197D20D8004863A7 /* BRISKLayer.cpp */; };
+		26AA4280197D881B004863A7 /* BRISKDetection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26AA427E197D881A004863A7 /* BRISKDetection.cpp */; };
+		26AA4283197EEC8F004863A7 /* Match.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26AA4281197EEC8F004863A7 /* Match.cpp */; };
+		26C5D4C219CC4E3900746C1B /* BundleAdjustment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26C5D4C019CC4E3900746C1B /* BundleAdjustment.cpp */; };
+		26D1BB28196BE59E001114F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D1BB27196BE59E001114F0 /* Foundation.framework */; };
+		26D1BB2A196BE59E001114F0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D1BB29196BE59E001114F0 /* CoreGraphics.framework */; };
+		26D1BB2C196BE59E001114F0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D1BB2B196BE59E001114F0 /* UIKit.framework */; };
+		26D1BB32196BE59E001114F0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 26D1BB30196BE59E001114F0 /* InfoPlist.strings */; };
+		26D1BB34196BE59E001114F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D1BB33196BE59E001114F0 /* main.m */; };
+		26D1BB38196BE59E001114F0 /* ACGTAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 26D1BB37196BE59E001114F0 /* ACGTAppDelegate.mm */; };
+		26D1BB3A196BE59E001114F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26D1BB39196BE59E001114F0 /* Images.xcassets */; };
+		26D1BB58196BE7C9001114F0 /* ACGTViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 26D1BB57196BE7C9001114F0 /* ACGTViewController.mm */; };
+		26D1BB5B196BEC04001114F0 /* ACGTARView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 26D1BB5A196BEC04001114F0 /* ACGTARView.mm */; };
+		26D1BB5E196BFC7D001114F0 /* ACGTVideoProcessor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 26D1BB5D196BFC7D001114F0 /* ACGTVideoProcessor.mm */; };
+		26D1BB60196C001B001114F0 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D1BB5F196C001B001114F0 /* CoreMotion.framework */; };
+		26D1BB62196C00B8001114F0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D1BB61196C00B8001114F0 /* AVFoundation.framework */; };
+		26D1BB64196C0115001114F0 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D1BB63196C0115001114F0 /* CoreVideo.framework */; };
+		26D1BB67196C07CF001114F0 /* ACGTSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D1BB66196C07CF001114F0 /* ACGTSettings.m */; };
+		26D1BB69196C0D85001114F0 /* ACGTSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26D1BB68196C0D85001114F0 /* ACGTSettings.plist */; };
+		26D1BB6C196C2545001114F0 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D1BB6B196C2545001114F0 /* CoreMedia.framework */; };
+		26D1BB6E196C2842001114F0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D1BB6D196C2842001114F0 /* QuartzCore.framework */; };
+		26D1BB70196C28C2001114F0 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D1BB6F196C28C2001114F0 /* OpenGLES.framework */; };
+		26D1BB74196C30FF001114F0 /* texture.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 26D1BB72196C30FF001114F0 /* texture.fsh */; };
+		26D1BB75196C30FF001114F0 /* texture.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 26D1BB73196C30FF001114F0 /* texture.vsh */; };
+		26D1BB78196C4412001114F0 /* ShaderUtilities.c in Sources */ = {isa = PBXBuildFile; fileRef = 26D1BB76196C4412001114F0 /* ShaderUtilities.c */; };
+		26D85F9D19A8BB0400395758 /* Triangulation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26D85F9B19A8BB0400395758 /* Triangulation.cpp */; };
+		26D85F9F19A8F4FF00395758 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D85F9E19A8F4FF00395758 /* Accelerate.framework */; };
+		26D85FA219A8F9AF00395758 /* ACGTracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26D85FA019A8F9AF00395758 /* ACGTracker.cpp */; };
+		26D85FA419A902E700395758 /* point.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 26D85FA319A902E700395758 /* point.vsh */; };
+		26D85FA619A902FD00395758 /* point.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 26D85FA519A902FD00395758 /* point.fsh */; };
+		26D85FA819A9030B00395758 /* line.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 26D85FA719A9030B00395758 /* line.vsh */; };
+		26D85FAA19A9031F00395758 /* line.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 26D85FA919A9031F00395758 /* line.fsh */; };
+		26E81C4B196D903C0099C26B /* EulerAngles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26E81C43196D903C0099C26B /* EulerAngles.cpp */; };
+		26EA43A71983B1C200238715 /* Map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26EA43A51983B1C200238715 /* Map.cpp */; };
+		26EA43AB1983D98700238715 /* MapPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26EA43A91983D98700238715 /* MapPoint.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		26C5D4D319CE239100746C1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26C5D4CC19CE239000746C1B /* CeresIOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 26C5D4CF19CE239000746C1B;
+			remoteInfo = CeresIOS;
+		};
+		26C5D4DC19CE267700746C1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26C5D4CC19CE239000746C1B /* CeresIOS.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CEDC2D6164D581400E6EA6F;
+			remoteInfo = CeresIOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2620EF2519B0AACF00EF0155 /* Point3d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Point3d.cpp; path = ACGTracker/Types/Point3d.cpp; sourceTree = SOURCE_ROOT; };
+		2620EF2619B0AACF00EF0155 /* Point3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Point3d.h; path = ACGTracker/Types/Point3d.h; sourceTree = SOURCE_ROOT; };
+		2620EF2819B0AE5900EF0155 /* Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Color.h; path = ACGTracker/Types/Color.h; sourceTree = SOURCE_ROOT; };
+		2624AF4519B36431004F586A /* PNP.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PNP.cpp; path = ACGTracker/PNP/PNP.cpp; sourceTree = SOURCE_ROOT; };
+		2624AF4619B36431004F586A /* PNP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PNP.h; path = ACGTracker/PNP/PNP.h; sourceTree = SOURCE_ROOT; };
+		264D005F198689B900406084 /* SfM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SfM.cpp; path = ACGTracker/SfM/SfM.cpp; sourceTree = SOURCE_ROOT; };
+		264D0060198689B900406084 /* SfM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SfM.h; path = ACGTracker/SfM/SfM.h; sourceTree = SOURCE_ROOT; };
+		266680B519A778CE005F2160 /* EssentialMatrix3PtSolver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EssentialMatrix3PtSolver.cpp; path = ACGTracker/SfM/EssentialMatrix3PtSolver.cpp; sourceTree = SOURCE_ROOT; };
+		266680B619A778CE005F2160 /* EssentialMatrix3PtSolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EssentialMatrix3PtSolver.h; path = ACGTracker/SfM/EssentialMatrix3PtSolver.h; sourceTree = SOURCE_ROOT; };
+		266775C7196D9CC40083087C /* PolynomialSolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PolynomialSolver.h; path = ACGTracker/Utils/PolynomialSolver.h; sourceTree = SOURCE_ROOT; };
+		266775C8196D9CC40083087C /* PolynomialSolver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PolynomialSolver.cpp; path = ACGTracker/Utils/PolynomialSolver.cpp; sourceTree = SOURCE_ROOT; };
+		2668541219E58E8A003D836B /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		267DF2E219B32A8D00F75768 /* PatchDescription.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PatchDescription.cpp; path = ACGTracker/Features/PatchDescription/PatchDescription.cpp; sourceTree = SOURCE_ROOT; };
+		267DF2E319B32A8D00F75768 /* PatchDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PatchDescription.h; path = ACGTracker/Features/PatchDescription/PatchDescription.h; sourceTree = SOURCE_ROOT; };
+		2688655019A663BB00C0CBED /* NormalizationTransform.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NormalizationTransform.cpp; path = ACGTracker/Utils/NormalizationTransform.cpp; sourceTree = SOURCE_ROOT; };
+		2688655119A663BB00C0CBED /* NormalizationTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NormalizationTransform.h; path = ACGTracker/Utils/NormalizationTransform.h; sourceTree = SOURCE_ROOT; };
+		26AA4251196EA5A5004863A7 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Settings.h; path = ACGTracker/Settings/Settings.h; sourceTree = SOURCE_ROOT; };
+		26AA4255196EBC4E004863A7 /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Image.h; path = ../ACGTracker/Types/Image.h; sourceTree = "<group>"; };
+		26AA425719702716004863A7 /* RGBImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RGBImage.h; path = ACGTracker/Types/RGBImage.h; sourceTree = SOURCE_ROOT; };
+		26AA425819703F4E004863A7 /* GrayscaleImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GrayscaleImage.h; path = ACGTracker/Types/GrayscaleImage.h; sourceTree = SOURCE_ROOT; };
+		26AA425919752C04004863A7 /* GrayscaleImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GrayscaleImage.cpp; path = ACGTracker/Types/GrayscaleImage.cpp; sourceTree = SOURCE_ROOT; };
+		26AA425B197544B0004863A7 /* RGBImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RGBImage.cpp; path = ACGTracker/Types/RGBImage.cpp; sourceTree = SOURCE_ROOT; };
+		26AA425D19754777004863A7 /* RGBAImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RGBAImage.cpp; path = ACGTracker/Types/RGBAImage.cpp; sourceTree = SOURCE_ROOT; };
+		26AA425E19754777004863A7 /* RGBAImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RGBAImage.h; path = ACGTracker/Types/RGBAImage.h; sourceTree = SOURCE_ROOT; };
+		26AA4260197548B2004863A7 /* BGRAImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BGRAImage.cpp; path = ACGTracker/Types/BGRAImage.cpp; sourceTree = SOURCE_ROOT; };
+		26AA4261197548B2004863A7 /* BGRAImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGRAImage.h; path = ACGTracker/Types/BGRAImage.h; sourceTree = SOURCE_ROOT; };
+		26AA42641976CC77004863A7 /* FeatureDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeatureDetection.h; path = ACGTracker/Features/FeatureDetection.h; sourceTree = SOURCE_ROOT; };
+		26AA42661977DD2A004863A7 /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Camera.cpp; path = ACGTracker/Map/Camera.cpp; sourceTree = SOURCE_ROOT; };
+		26AA42671977DD2A004863A7 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Camera.h; path = ACGTracker/Map/Camera.h; sourceTree = SOURCE_ROOT; };
+		26AA42681977DD2A004863A7 /* SE3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SE3.cpp; path = ACGTracker/Types/SE3.cpp; sourceTree = SOURCE_ROOT; };
+		26AA42691977DD2A004863A7 /* SE3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SE3.h; path = ACGTracker/Types/SE3.h; sourceTree = SOURCE_ROOT; };
+		26AA426C1977DE2C004863A7 /* Intrinsics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Intrinsics.cpp; path = ACGTracker/Types/Intrinsics.cpp; sourceTree = SOURCE_ROOT; };
+		26AA426D1977DE2C004863A7 /* Intrinsics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Intrinsics.h; path = ACGTracker/Types/Intrinsics.h; sourceTree = SOURCE_ROOT; };
+		26AA426F1979563E004863A7 /* Feature.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Feature.cpp; path = ACGTracker/Features/Feature.cpp; sourceTree = SOURCE_ROOT; };
+		26AA42701979563E004863A7 /* Feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Feature.h; path = ACGTracker/Features/Feature.h; sourceTree = SOURCE_ROOT; };
+		26AA427219797285004863A7 /* OASTDetection9_16.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OASTDetection9_16.cpp; path = ACGTracker/Features/AGAST/OASTDetection9_16.cpp; sourceTree = SOURCE_ROOT; };
+		26AA427319797285004863A7 /* OASTDetection9_16.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OASTDetection9_16.h; path = ACGTracker/Features/AGAST/OASTDetection9_16.h; sourceTree = SOURCE_ROOT; };
+		26AA4276197D0EC4004863A7 /* AGASTDetection5_8.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AGASTDetection5_8.cpp; path = ACGTracker/Features/AGAST/AGASTDetection5_8.cpp; sourceTree = SOURCE_ROOT; };
+		26AA4277197D0EC4004863A7 /* AGASTDetection5_8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGASTDetection5_8.h; path = ACGTracker/Features/AGAST/AGASTDetection5_8.h; sourceTree = SOURCE_ROOT; };
+		26AA427A197D20D8004863A7 /* BRISKLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BRISKLayer.cpp; path = ACGTracker/Features/BRISK/BRISKLayer.cpp; sourceTree = SOURCE_ROOT; };
+		26AA427B197D20D8004863A7 /* BRISKLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BRISKLayer.h; path = ACGTracker/Features/BRISK/BRISKLayer.h; sourceTree = SOURCE_ROOT; };
+		26AA427D197D49AF004863A7 /* NeonExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NeonExtensions.h; path = ACGTracker/Utils/NeonExtensions.h; sourceTree = SOURCE_ROOT; };
+		26AA427E197D881A004863A7 /* BRISKDetection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BRISKDetection.cpp; path = ACGTracker/Features/BRISK/BRISKDetection.cpp; sourceTree = SOURCE_ROOT; };
+		26AA427F197D881B004863A7 /* BRISKDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BRISKDetection.h; path = ACGTracker/Features/BRISK/BRISKDetection.h; sourceTree = SOURCE_ROOT; };
+		26AA4281197EEC8F004863A7 /* Match.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Match.cpp; path = ACGTracker/Features/Match.cpp; sourceTree = SOURCE_ROOT; };
+		26AA4282197EEC8F004863A7 /* Match.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Match.h; path = ACGTracker/Features/Match.h; sourceTree = SOURCE_ROOT; };
+		26AA4285197EF39B004863A7 /* FeatureDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeatureDescription.h; path = ACGTracker/Features/FeatureDescription.h; sourceTree = SOURCE_ROOT; };
+		26AA428B197F0589004863A7 /* BRISKDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BRISKDescription.h; path = ACGTracker/Features/BRISK/BRISKDescription.h; sourceTree = SOURCE_ROOT; };
+		26BD443A19B265F100640FD2 /* TwoViewMatching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TwoViewMatching.h; path = ACGTracker/Features/TwoViewMatching.h; sourceTree = SOURCE_ROOT; };
+		26BD443C19B311D200640FD2 /* FeatureTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeatureTracking.h; path = ACGTracker/Features/FeatureTracking.h; sourceTree = SOURCE_ROOT; };
+		26BD443D19B3123B00640FD2 /* FeatureTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeatureTrack.h; path = ACGTracker/Features/FeatureTrack.h; sourceTree = SOURCE_ROOT; };
+		26C5D4C019CC4E3900746C1B /* BundleAdjustment.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BundleAdjustment.cpp; path = ACGTracker/SfM/BundleAdjustment.cpp; sourceTree = SOURCE_ROOT; };
+		26C5D4C119CC4E3900746C1B /* BundleAdjustment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BundleAdjustment.h; path = ACGTracker/SfM/BundleAdjustment.h; sourceTree = SOURCE_ROOT; };
+		26C5D4CC19CE239000746C1B /* CeresIOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CeresIOS.xcodeproj; path = external/CeresIOS.xcodeproj; sourceTree = SOURCE_ROOT; };
+		26D1BB24196BE59E001114F0 /* ACG Tracker Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ACG Tracker Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26D1BB27196BE59E001114F0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		26D1BB29196BE59E001114F0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		26D1BB2B196BE59E001114F0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		26D1BB2F196BE59E001114F0 /* ACG Tracker Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ACG Tracker Demo-Info.plist"; sourceTree = "<group>"; };
+		26D1BB31196BE59E001114F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		26D1BB33196BE59E001114F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		26D1BB35196BE59E001114F0 /* ACG Tracker Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ACG Tracker Demo-Prefix.pch"; sourceTree = "<group>"; };
+		26D1BB36196BE59E001114F0 /* ACGTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACGTAppDelegate.h; sourceTree = "<group>"; };
+		26D1BB37196BE59E001114F0 /* ACGTAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ACGTAppDelegate.mm; sourceTree = "<group>"; };
+		26D1BB39196BE59E001114F0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		26D1BB40196BE59E001114F0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		26D1BB56196BE7C9001114F0 /* ACGTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACGTViewController.h; sourceTree = "<group>"; };
+		26D1BB57196BE7C9001114F0 /* ACGTViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ACGTViewController.mm; sourceTree = "<group>"; };
+		26D1BB59196BEC04001114F0 /* ACGTARView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACGTARView.h; sourceTree = "<group>"; };
+		26D1BB5A196BEC04001114F0 /* ACGTARView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ACGTARView.mm; sourceTree = "<group>"; };
+		26D1BB5C196BFC7D001114F0 /* ACGTVideoProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACGTVideoProcessor.h; sourceTree = "<group>"; };
+		26D1BB5D196BFC7D001114F0 /* ACGTVideoProcessor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ACGTVideoProcessor.mm; sourceTree = "<group>"; };
+		26D1BB5F196C001B001114F0 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		26D1BB61196C00B8001114F0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		26D1BB63196C0115001114F0 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		26D1BB65196C07CF001114F0 /* ACGTSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACGTSettings.h; sourceTree = "<group>"; };
+		26D1BB66196C07CF001114F0 /* ACGTSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACGTSettings.m; sourceTree = "<group>"; };
+		26D1BB68196C0D85001114F0 /* ACGTSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ACGTSettings.plist; sourceTree = SOURCE_ROOT; };
+		26D1BB6A196C2023001114F0 /* ACGTVideoProcessorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACGTVideoProcessorDelegate.h; sourceTree = "<group>"; };
+		26D1BB6B196C2545001114F0 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		26D1BB6D196C2842001114F0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		26D1BB6F196C28C2001114F0 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		26D1BB72196C30FF001114F0 /* texture.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = texture.fsh; path = Shaders/texture.fsh; sourceTree = "<group>"; };
+		26D1BB73196C30FF001114F0 /* texture.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = texture.vsh; path = Shaders/texture.vsh; sourceTree = "<group>"; };
+		26D1BB76196C4412001114F0 /* ShaderUtilities.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ShaderUtilities.c; path = Shaders/ShaderUtilities.c; sourceTree = "<group>"; };
+		26D1BB77196C4412001114F0 /* ShaderUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShaderUtilities.h; path = Shaders/ShaderUtilities.h; sourceTree = "<group>"; };
+		26D85F9A19A8A39900395758 /* Metrics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Metrics.h; path = ACGTracker/Utils/Metrics.h; sourceTree = SOURCE_ROOT; };
+		26D85F9B19A8BB0400395758 /* Triangulation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Triangulation.cpp; path = ACGTracker/Utils/Triangulation.cpp; sourceTree = SOURCE_ROOT; };
+		26D85F9C19A8BB0400395758 /* Triangulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Triangulation.h; path = ACGTracker/Utils/Triangulation.h; sourceTree = SOURCE_ROOT; };
+		26D85F9E19A8F4FF00395758 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		26D85FA019A8F9AF00395758 /* ACGTracker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ACGTracker.cpp; path = ACGTracker/ACGTracker.cpp; sourceTree = SOURCE_ROOT; };
+		26D85FA119A8F9AF00395758 /* ACGTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACGTracker.h; path = ACGTracker/ACGTracker.h; sourceTree = SOURCE_ROOT; };
+		26D85FA319A902E700395758 /* point.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = point.vsh; path = Shaders/point.vsh; sourceTree = "<group>"; };
+		26D85FA519A902FD00395758 /* point.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = point.fsh; path = Shaders/point.fsh; sourceTree = "<group>"; };
+		26D85FA719A9030B00395758 /* line.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = line.vsh; path = Shaders/line.vsh; sourceTree = "<group>"; };
+		26D85FA919A9031F00395758 /* line.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = line.fsh; path = Shaders/line.fsh; sourceTree = "<group>"; };
+		26E81C43196D903C0099C26B /* EulerAngles.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EulerAngles.cpp; path = ACGTracker/Types/EulerAngles.cpp; sourceTree = SOURCE_ROOT; };
+		26E81C44196D903C0099C26B /* EulerAngles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EulerAngles.h; path = ACGTracker/Types/EulerAngles.h; sourceTree = SOURCE_ROOT; };
+		26EA43A51983B1C200238715 /* Map.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Map.cpp; path = ACGTracker/Map/Map.cpp; sourceTree = SOURCE_ROOT; };
+		26EA43A61983B1C200238715 /* Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Map.h; path = ACGTracker/Map/Map.h; sourceTree = SOURCE_ROOT; };
+		26EA43A91983D98700238715 /* MapPoint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MapPoint.cpp; path = ACGTracker/Map/MapPoint.cpp; sourceTree = SOURCE_ROOT; };
+		26EA43AA1983D98700238715 /* MapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapPoint.h; path = ACGTracker/Map/MapPoint.h; sourceTree = SOURCE_ROOT; };
+		26EA43AC1985455700238715 /* BRISK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BRISK.h; path = ACGTracker/Features/BRISK/BRISK.h; sourceTree = SOURCE_ROOT; };
+		26EA43AD1985459900238715 /* AGAST.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AGAST.h; path = ACGTracker/Features/AGAST/AGAST.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		26D1BB21196BE59E001114F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2668541419E59B42003D836B /* libCeresIOS.a in Frameworks */,
+				2668541319E58E8A003D836B /* GLKit.framework in Frameworks */,
+				26D85F9F19A8F4FF00395758 /* Accelerate.framework in Frameworks */,
+				26D1BB70196C28C2001114F0 /* OpenGLES.framework in Frameworks */,
+				26D1BB6E196C2842001114F0 /* QuartzCore.framework in Frameworks */,
+				26D1BB6C196C2545001114F0 /* CoreMedia.framework in Frameworks */,
+				26D1BB64196C0115001114F0 /* CoreVideo.framework in Frameworks */,
+				26D1BB62196C00B8001114F0 /* AVFoundation.framework in Frameworks */,
+				26D1BB60196C001B001114F0 /* CoreMotion.framework in Frameworks */,
+				26D1BB2A196BE59E001114F0 /* CoreGraphics.framework in Frameworks */,
+				26D1BB2C196BE59E001114F0 /* UIKit.framework in Frameworks */,
+				26D1BB28196BE59E001114F0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2624AF4419B36283004F586A /* PNP */ = {
+			isa = PBXGroup;
+			children = (
+				2624AF4619B36431004F586A /* PNP.h */,
+				2624AF4519B36431004F586A /* PNP.cpp */,
+			);
+			name = PNP;
+			sourceTree = "<group>";
+		};
+		264D005E1986898800406084 /* SfM */ = {
+			isa = PBXGroup;
+			children = (
+				266680B619A778CE005F2160 /* EssentialMatrix3PtSolver.h */,
+				266680B519A778CE005F2160 /* EssentialMatrix3PtSolver.cpp */,
+				264D0060198689B900406084 /* SfM.h */,
+				264D005F198689B900406084 /* SfM.cpp */,
+				26C5D4C119CC4E3900746C1B /* BundleAdjustment.h */,
+				26C5D4C019CC4E3900746C1B /* BundleAdjustment.cpp */,
+			);
+			name = SfM;
+			sourceTree = "<group>";
+		};
+		267DF2E119B329A200F75768 /* PatchDescription */ = {
+			isa = PBXGroup;
+			children = (
+				267DF2E319B32A8D00F75768 /* PatchDescription.h */,
+				267DF2E219B32A8D00F75768 /* PatchDescription.cpp */,
+			);
+			name = PatchDescription;
+			sourceTree = "<group>";
+		};
+		26AA424D196EA2BA004863A7 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				26AA42701979563E004863A7 /* Feature.h */,
+				26AA426F1979563E004863A7 /* Feature.cpp */,
+				26AA42641976CC77004863A7 /* FeatureDetection.h */,
+				26AA4285197EF39B004863A7 /* FeatureDescription.h */,
+				26AA4282197EEC8F004863A7 /* Match.h */,
+				26AA4281197EEC8F004863A7 /* Match.cpp */,
+				26BD443A19B265F100640FD2 /* TwoViewMatching.h */,
+				26BD443D19B3123B00640FD2 /* FeatureTrack.h */,
+				26BD443C19B311D200640FD2 /* FeatureTracking.h */,
+				26AA42751979729B004863A7 /* AGAST */,
+				26AA4279197D2093004863A7 /* BRISK */,
+				267DF2E119B329A200F75768 /* PatchDescription */,
+			);
+			name = Features;
+			sourceTree = "<group>";
+		};
+		26AA424F196EA51B004863A7 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				26AA4251196EA5A5004863A7 /* Settings.h */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		26AA4253196EA610004863A7 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				26E81C44196D903C0099C26B /* EulerAngles.h */,
+				26E81C43196D903C0099C26B /* EulerAngles.cpp */,
+				26AA4255196EBC4E004863A7 /* Image.h */,
+				26AA425719702716004863A7 /* RGBImage.h */,
+				26AA425B197544B0004863A7 /* RGBImage.cpp */,
+				26AA425E19754777004863A7 /* RGBAImage.h */,
+				26AA425D19754777004863A7 /* RGBAImage.cpp */,
+				26AA4261197548B2004863A7 /* BGRAImage.h */,
+				26AA4260197548B2004863A7 /* BGRAImage.cpp */,
+				26AA425819703F4E004863A7 /* GrayscaleImage.h */,
+				26AA425919752C04004863A7 /* GrayscaleImage.cpp */,
+				26AA426D1977DE2C004863A7 /* Intrinsics.h */,
+				26AA426C1977DE2C004863A7 /* Intrinsics.cpp */,
+				26AA42691977DD2A004863A7 /* SE3.h */,
+				26AA42681977DD2A004863A7 /* SE3.cpp */,
+				2620EF2819B0AE5900EF0155 /* Color.h */,
+				2620EF2619B0AACF00EF0155 /* Point3d.h */,
+				2620EF2519B0AACF00EF0155 /* Point3d.cpp */,
+			);
+			name = Types;
+			sourceTree = "<group>";
+		};
+		26AA42751979729B004863A7 /* AGAST */ = {
+			isa = PBXGroup;
+			children = (
+				26EA43AD1985459900238715 /* AGAST.h */,
+				26AA427319797285004863A7 /* OASTDetection9_16.h */,
+				26AA427219797285004863A7 /* OASTDetection9_16.cpp */,
+				26AA4277197D0EC4004863A7 /* AGASTDetection5_8.h */,
+				26AA4276197D0EC4004863A7 /* AGASTDetection5_8.cpp */,
+			);
+			name = AGAST;
+			sourceTree = "<group>";
+		};
+		26AA4279197D2093004863A7 /* BRISK */ = {
+			isa = PBXGroup;
+			children = (
+				26EA43AC1985455700238715 /* BRISK.h */,
+				26AA427B197D20D8004863A7 /* BRISKLayer.h */,
+				26AA427A197D20D8004863A7 /* BRISKLayer.cpp */,
+				26AA427F197D881B004863A7 /* BRISKDetection.h */,
+				26AA427E197D881A004863A7 /* BRISKDetection.cpp */,
+				26AA428B197F0589004863A7 /* BRISKDescription.h */,
+			);
+			name = BRISK;
+			sourceTree = "<group>";
+		};
+		26C5D4CD19CE239000746C1B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26C5D4D419CE239100746C1B /* libCeresIOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26D1BB1B196BE59E001114F0 = {
+			isa = PBXGroup;
+			children = (
+				26D1BB2D196BE59E001114F0 /* ACG Tracker Demo */,
+				26D1BB26196BE59E001114F0 /* Frameworks */,
+				26D1BB25196BE59E001114F0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		26D1BB25196BE59E001114F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26D1BB24196BE59E001114F0 /* ACG Tracker Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26D1BB26196BE59E001114F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2668541219E58E8A003D836B /* GLKit.framework */,
+				26D85F9E19A8F4FF00395758 /* Accelerate.framework */,
+				26D1BB6F196C28C2001114F0 /* OpenGLES.framework */,
+				26D1BB6D196C2842001114F0 /* QuartzCore.framework */,
+				26D1BB6B196C2545001114F0 /* CoreMedia.framework */,
+				26D1BB63196C0115001114F0 /* CoreVideo.framework */,
+				26D1BB61196C00B8001114F0 /* AVFoundation.framework */,
+				26D1BB5F196C001B001114F0 /* CoreMotion.framework */,
+				26D1BB27196BE59E001114F0 /* Foundation.framework */,
+				26D1BB29196BE59E001114F0 /* CoreGraphics.framework */,
+				26D1BB2B196BE59E001114F0 /* UIKit.framework */,
+				26D1BB40196BE59E001114F0 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		26D1BB2D196BE59E001114F0 /* ACG Tracker Demo */ = {
+			isa = PBXGroup;
+			children = (
+				26D1BB36196BE59E001114F0 /* ACGTAppDelegate.h */,
+				26D1BB37196BE59E001114F0 /* ACGTAppDelegate.mm */,
+				26D1BB56196BE7C9001114F0 /* ACGTViewController.h */,
+				26D1BB57196BE7C9001114F0 /* ACGTViewController.mm */,
+				26D1BB59196BEC04001114F0 /* ACGTARView.h */,
+				26D1BB5A196BEC04001114F0 /* ACGTARView.mm */,
+				26D1BB5C196BFC7D001114F0 /* ACGTVideoProcessor.h */,
+				26D1BB5D196BFC7D001114F0 /* ACGTVideoProcessor.mm */,
+				26D1BB6A196C2023001114F0 /* ACGTVideoProcessorDelegate.h */,
+				26D1BB65196C07CF001114F0 /* ACGTSettings.h */,
+				26D1BB66196C07CF001114F0 /* ACGTSettings.m */,
+				26D1BB39196BE59E001114F0 /* Images.xcassets */,
+				26D1BB71196C3084001114F0 /* Shaders */,
+				26D1BB79196D405B001114F0 /* ACG Tracker */,
+				26D1BB2E196BE59E001114F0 /* Supporting Files */,
+			);
+			path = "ACG Tracker Demo";
+			sourceTree = "<group>";
+		};
+		26D1BB2E196BE59E001114F0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				26D1BB2F196BE59E001114F0 /* ACG Tracker Demo-Info.plist */,
+				26D1BB30196BE59E001114F0 /* InfoPlist.strings */,
+				26D1BB33196BE59E001114F0 /* main.m */,
+				26D1BB35196BE59E001114F0 /* ACG Tracker Demo-Prefix.pch */,
+				26D1BB68196C0D85001114F0 /* ACGTSettings.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		26D1BB71196C3084001114F0 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				26D1BB76196C4412001114F0 /* ShaderUtilities.c */,
+				26D1BB77196C4412001114F0 /* ShaderUtilities.h */,
+				26D1BB73196C30FF001114F0 /* texture.vsh */,
+				26D1BB72196C30FF001114F0 /* texture.fsh */,
+				26D85FA319A902E700395758 /* point.vsh */,
+				26D85FA519A902FD00395758 /* point.fsh */,
+				26D85FA719A9030B00395758 /* line.vsh */,
+				26D85FA919A9031F00395758 /* line.fsh */,
+			);
+			name = Shaders;
+			sourceTree = "<group>";
+		};
+		26D1BB79196D405B001114F0 /* ACG Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				26D85FA119A8F9AF00395758 /* ACGTracker.h */,
+				26D85FA019A8F9AF00395758 /* ACGTracker.cpp */,
+				26AA424F196EA51B004863A7 /* Settings */,
+				26AA4253196EA610004863A7 /* Types */,
+				26D1BB7A196D406E001114F0 /* Utils */,
+				26AA424D196EA2BA004863A7 /* Features */,
+				264D005E1986898800406084 /* SfM */,
+				2624AF4419B36283004F586A /* PNP */,
+				26EA43A81983B1CD00238715 /* Map */,
+				26C5D4CC19CE239000746C1B /* CeresIOS.xcodeproj */,
+			);
+			name = "ACG Tracker";
+			sourceTree = "<group>";
+		};
+		26D1BB7A196D406E001114F0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				266775C7196D9CC40083087C /* PolynomialSolver.h */,
+				266775C8196D9CC40083087C /* PolynomialSolver.cpp */,
+				26AA427D197D49AF004863A7 /* NeonExtensions.h */,
+				2688655119A663BB00C0CBED /* NormalizationTransform.h */,
+				2688655019A663BB00C0CBED /* NormalizationTransform.cpp */,
+				26D85F9A19A8A39900395758 /* Metrics.h */,
+				26D85F9C19A8BB0400395758 /* Triangulation.h */,
+				26D85F9B19A8BB0400395758 /* Triangulation.cpp */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		26EA43A81983B1CD00238715 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				26EA43A61983B1C200238715 /* Map.h */,
+				26EA43A51983B1C200238715 /* Map.cpp */,
+				26EA43AA1983D98700238715 /* MapPoint.h */,
+				26EA43A91983D98700238715 /* MapPoint.cpp */,
+				26AA42671977DD2A004863A7 /* Camera.h */,
+				26AA42661977DD2A004863A7 /* Camera.cpp */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		26D1BB23196BE59E001114F0 /* ACG Tracker Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26D1BB50196BE59E001114F0 /* Build configuration list for PBXNativeTarget "ACG Tracker Demo" */;
+			buildPhases = (
+				26D1BB20196BE59E001114F0 /* Sources */,
+				26D1BB21196BE59E001114F0 /* Frameworks */,
+				26D1BB22196BE59E001114F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26C5D4DD19CE267700746C1B /* PBXTargetDependency */,
+			);
+			name = "ACG Tracker Demo";
+			productName = TrackerDemo;
+			productReference = 26D1BB24196BE59E001114F0 /* ACG Tracker Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		26D1BB1C196BE59E001114F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Computer Graphics Group - RWTH Aachen";
+			};
+			buildConfigurationList = 26D1BB1F196BE59E001114F0 /* Build configuration list for PBXProject "ACG Tracker Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 26D1BB1B196BE59E001114F0;
+			productRefGroup = 26D1BB25196BE59E001114F0 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 26C5D4CD19CE239000746C1B /* Products */;
+					ProjectRef = 26C5D4CC19CE239000746C1B /* CeresIOS.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				26D1BB23196BE59E001114F0 /* ACG Tracker Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		26C5D4D419CE239100746C1B /* libCeresIOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCeresIOS.a;
+			remoteRef = 26C5D4D319CE239100746C1B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		26D1BB22196BE59E001114F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26D85FA819A9030B00395758 /* line.vsh in Resources */,
+				26D85FA419A902E700395758 /* point.vsh in Resources */,
+				26D1BB75196C30FF001114F0 /* texture.vsh in Resources */,
+				26D85FAA19A9031F00395758 /* line.fsh in Resources */,
+				26D85FA619A902FD00395758 /* point.fsh in Resources */,
+				26D1BB69196C0D85001114F0 /* ACGTSettings.plist in Resources */,
+				26D1BB32196BE59E001114F0 /* InfoPlist.strings in Resources */,
+				26D1BB3A196BE59E001114F0 /* Images.xcassets in Resources */,
+				26D1BB74196C30FF001114F0 /* texture.fsh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26D1BB20196BE59E001114F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26AA427C197D20D8004863A7 /* BRISKLayer.cpp in Sources */,
+				26AA425A19752C04004863A7 /* GrayscaleImage.cpp in Sources */,
+				264D0061198689B900406084 /* SfM.cpp in Sources */,
+				26C5D4C219CC4E3900746C1B /* BundleAdjustment.cpp in Sources */,
+				26D1BB67196C07CF001114F0 /* ACGTSettings.m in Sources */,
+				26D1BB58196BE7C9001114F0 /* ACGTViewController.mm in Sources */,
+				26D1BB5E196BFC7D001114F0 /* ACGTVideoProcessor.mm in Sources */,
+				2624AF4719B36431004F586A /* PNP.cpp in Sources */,
+				26AA426A1977DD2A004863A7 /* Camera.cpp in Sources */,
+				26EA43A71983B1C200238715 /* Map.cpp in Sources */,
+				26AA426E1977DE2C004863A7 /* Intrinsics.cpp in Sources */,
+				26D1BB78196C4412001114F0 /* ShaderUtilities.c in Sources */,
+				26D1BB38196BE59E001114F0 /* ACGTAppDelegate.mm in Sources */,
+				26AA4280197D881B004863A7 /* BRISKDetection.cpp in Sources */,
+				26AA427419797285004863A7 /* OASTDetection9_16.cpp in Sources */,
+				266680B719A778CE005F2160 /* EssentialMatrix3PtSolver.cpp in Sources */,
+				26D1BB34196BE59E001114F0 /* main.m in Sources */,
+				26D1BB5B196BEC04001114F0 /* ACGTARView.mm in Sources */,
+				267DF2E419B32A8D00F75768 /* PatchDescription.cpp in Sources */,
+				26EA43AB1983D98700238715 /* MapPoint.cpp in Sources */,
+				26AA4283197EEC8F004863A7 /* Match.cpp in Sources */,
+				26AA425F19754777004863A7 /* RGBAImage.cpp in Sources */,
+				26AA425C197544B0004863A7 /* RGBImage.cpp in Sources */,
+				26AA426B1977DD2A004863A7 /* SE3.cpp in Sources */,
+				26AA4278197D0EC4004863A7 /* AGASTDetection5_8.cpp in Sources */,
+				26D85FA219A8F9AF00395758 /* ACGTracker.cpp in Sources */,
+				2620EF2719B0AACF00EF0155 /* Point3d.cpp in Sources */,
+				26AA4262197548B2004863A7 /* BGRAImage.cpp in Sources */,
+				26AA42711979563E004863A7 /* Feature.cpp in Sources */,
+				266775C9196D9CC40083087C /* PolynomialSolver.cpp in Sources */,
+				26E81C4B196D903C0099C26B /* EulerAngles.cpp in Sources */,
+				2688655219A663BB00C0CBED /* NormalizationTransform.cpp in Sources */,
+				26D85F9D19A8BB0400395758 /* Triangulation.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		26C5D4DD19CE267700746C1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CeresIOS;
+			targetProxy = 26C5D4DC19CE267700746C1B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		26D1BB30196BE59E001114F0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26D1BB31196BE59E001114F0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		26D1BB4E196BE59E001114F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					external,
+					external/CeresIOS/include,
+					external/CeresIOS/include/cxsparse,
+					external/CeresIOS/src/ceres/miniglog,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-mfpu=neon",
+					"-mfloat-abi=softfp",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = ACGTracker;
+			};
+			name = Debug;
+		};
+		26D1BB4F196BE59E001114F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = NDEBUG;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					external,
+					external/CeresIOS/include,
+					external/CeresIOS/include/cxsparse,
+					external/CeresIOS/src/ceres/miniglog,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-mfpu=neon",
+					"-mfloat-abi=softfp",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = ACGTracker;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		26D1BB51196BE59E001114F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ACG Tracker Demo/ACG Tracker Demo-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					external,
+				);
+				INFOPLIST_FILE = "ACG Tracker Demo/ACG Tracker Demo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "ACG Tracker Demo";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		26D1BB52196BE59E001114F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ACG Tracker Demo/ACG Tracker Demo-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					external,
+				);
+				INFOPLIST_FILE = "ACG Tracker Demo/ACG Tracker Demo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "ACG Tracker Demo";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26D1BB1F196BE59E001114F0 /* Build configuration list for PBXProject "ACG Tracker Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26D1BB4E196BE59E001114F0 /* Debug */,
+				26D1BB4F196BE59E001114F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26D1BB50196BE59E001114F0 /* Build configuration list for PBXNativeTarget "ACG Tracker Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26D1BB51196BE59E001114F0 /* Debug */,
+				26D1BB52196BE59E001114F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 26D1BB1C196BE59E001114F0 /* Project object */;
+}
